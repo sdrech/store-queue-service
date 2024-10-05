@@ -12,3 +12,7 @@ store.put('b', '2');
 store.put('c', '3');
 store.get('a');
 store.get('a');
+store.put('b', '222');
+store.get('a');
+store.get('a');
+store.get('c');

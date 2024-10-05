@@ -44,7 +44,7 @@ describe('=== Validation the constructor of Store Class ===', () => {
 
 ///////
 
-describe('=== Validation acceptance criteria for Store Class ===', () => {
+describe('=== Validation arguments for get() and put() methods ===', () => {
     let store: Store
 
     beforeEach(() => {

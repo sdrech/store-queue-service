@@ -13,6 +13,7 @@ The service is written mainly on Typescript and contains 4 parts:
 - `npm run build` - just to compile ts-files again (if they were updated), already included in 'start' command
 
 ### Notes
+* The complexity of get() and put() methods is O(1) according to Big-O criteria. Each of these methods uses maximum 3 operation inside [get, delete, set with complexity O(1)], so 3 x O(1) = O(1).
 * Map.has() is omitted in the class to avoid one more operation. Method delete() is using directly here, it returns true/false only and doesn’t returns any errors if the Map has no given key.
 * Please consider index.html as not a real frontend part for this task, it’s for test purposes only. 
 * We can use console in browser to monitor logs and errors.

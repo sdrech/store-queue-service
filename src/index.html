@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two-Column Layout without Table</title>
+  <link rel="stylesheet" href="context/index.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="stage">
+        <form id="maxItemsForm">
+            <label for="maxItems">Max items in the Storage:</label>
+            <input type="number" min="1" id="maxItems" value="3">
+            <button type="submit">Set / Reset</button>
+        </form>
+    </div>
+    <div class="stage">
+        <h3>The sorted content of Storage:</h3>
+        <h4>(oldest record first)</h4>
+        <span id="store"></span>
+    </div>
+    <div class="stage">
+    </div>
+    <div class="columns-container">
+        <div class="column left">
+            <form id="getValueForm">
+                <h3>GET value for given key</h3>
+                <label for="keyToGet">Enter key name:</label>
+                <input type="text" id="keyToGet" required="required">
+                <button type="submit">Get value</button>
+                <input type="text" id="valueReceived" disabled="disabled">
+            </form>
+        </div>
+        <div class="column right">
+            <form id="putValueForm">
+                <h3>PUT value for specific key</h3>
+                <label for="keyToPut">Enter key name & value:</label>
+                <input type="text" id="keyToPut" required="required">
+                <input type="text" id="valueToPut">
+                <button type="submit">Put value</button>
+            </form>
+        </div>
+    </div>
+  </div>
+  <script> var exports = {}; </script>
+  <script src="../dist/store/store.class.js"></script>
+  <script src="context/index.js"></script>
+</body>
+</html>
